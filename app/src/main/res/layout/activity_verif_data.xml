@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".VerifDataActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- Form Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Form Antri"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Instructions Text -->
+        <TextView
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silahkan Lengkapi Data Anda"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Card View for Form -->
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Poli Name Text -->
+                <TextView
+                    android:id="@+id/textViewPoliName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Poli"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- NIK EditText -->
+                <EditText
+                    android:id="@+id/edNIK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nomor KTP"
+                    android:inputType="text"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Full Name EditText -->
+                <EditText
+                    android:id="@+id/edFULLNAME"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Lengkap"
+                    android:inputType="text"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Alamat EditText -->
+                <EditText
+                    android:id="@+id/edALAMAT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Alamat"
+                    android:inputType="text"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Phone Number EditText -->
+                <EditText
+                    android:id="@+id/edNOHP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nomor HP"
+                    android:inputType="phone"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Job EditText -->
+                <EditText
+                    android:id="@+id/edPEKERJAAN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Pekerjaan"
+                    android:inputType="text"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Gender Spinner -->
+                <Spinner
+                    android:id="@+id/spinnerGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Birth Date Button -->
+                <Button
+                    android:id="@+id/btnTanggalLahir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pilih Tanggal Lahir"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Registration Date Button -->
+                <Button
+                    android:id="@+id/btnTanggalDaftar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pilih Tanggal Daftar"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Submit Button -->
+                <Button
+                    android:id="@+id/SubmitDaftar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="12dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
